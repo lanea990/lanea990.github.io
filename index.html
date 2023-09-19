@@ -27,9 +27,7 @@
     
 <body>
     <header>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js"></script>
-        <div ng-app>{{1+1}}</div>
-     
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js">
 <h1 id="saludo"> Hello, <span id="nombreSpan"></span></h1>
     <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
     <button onclick="mostrarSaludo()">Saludar</button>
@@ -37,9 +35,10 @@
         function mostrarSaludo() {
             var nombre = document.getElementById("nombre").value;
             var nombreSpan = document.getElementById("nombreSpan");
-            nombreSpan.textContent = nombre;
+            nombreSpan.textContent =  ng-app>{nombre};
         }
     </script>
+        </script>
         
         <a href="#" class="logo">Cod<span>e</span>r.</a>
         <ul class="navegacion">
