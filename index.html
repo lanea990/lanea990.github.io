@@ -33,11 +33,11 @@
     <button onclick="mostrarSaludo()">Saludar</button>
 
         <script>
-        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js"
         function mostrarSaludo() {
+            src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js"
             var nombre = document.getElementById("nombre").value;
             var nombreSpan = document.getElementById("nombreSpan");
-            nombreSpan.textContent = nombre;
+            nombreSpan.textContent = ng-app>{nombre};
         }
     
         </script>
@@ -45,7 +45,7 @@
         <a href="#" class="logo">Cod<span>e</span>r.</a>
         <ul class="navegacion">
             <li><a href="#inicio" class="active">Inicio</a></li>
-            <li><a href="#About">About me</a></li>
+            <li><a href="#About">Aboutme</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#portafolio">Portfolio</a></li>
             <li><a href="#contacto">Contactame</a></li>
