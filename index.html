@@ -32,7 +32,13 @@
 <h1 id="saludo"> Hello, <span id="nombreSpan"></span></h1>
     <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
     <button onclick="mostrarSaludo()">Saludar</button>
-
+  <script>
+        function mostrarSaludo() {
+            var nombre = document.getElementById("nombre").value;
+            var nombreSpan = document.getElementById("nombreSpan");
+            nombreSpan.textContent = nombre;
+        }
+    </script>
         
         <a href="#" class="logo">Cod<span>e</span>r.</a>
         <ul class="navegacion">
