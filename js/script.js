@@ -17,8 +17,3 @@ window.onscroll = () => {
     navegacion.classList.remove('open');
 }
 
- function mostrarSaludo() {
-            var nombre = document.getElementById("nombre").value;
-            var nombreSpan = document.getElementById("nombreSpan");
-            nombreSpan.textContent = nombre;
-        }
