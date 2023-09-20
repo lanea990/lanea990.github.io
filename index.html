@@ -36,24 +36,17 @@
         
         <script>
         function mostrarSaludo() {
-            src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js"
             var nombre = document.getElementById("nombre").value;
             var nombreSpan = document.getElementById("nombreSpan");
             nombreSpan.textContent = nombre;
 
-            angular.module('ngAppDemo', []).controller('ngAppDemoController', function($scope) {
-  $scope.a = mostrarSaludo();
-});
+   
         }
 
             
     
         </script>
-
-<div ng-controller="ngAppDemoController">
-  hola: {{a}}
-</div>
-        
+  
         <a href="#" class="logo">Cod<span>e</span>r.</a>
         <ul class="navegacion">
             <li><a href="#inicio" class="active">Inicio</a></li>
