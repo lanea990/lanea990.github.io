@@ -31,6 +31,10 @@
 <h1 id = "saludo"> Hello, <span id="nombreSpan"></span></h1>
     <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
     <button onclick="mostrarSaludo()">Saludar</button>
+
+<div ng-controller="ngAppDemoController">
+  hola: {{a}}
+</div>
         
         <script>
         function mostrarSaludo() {
@@ -38,7 +42,13 @@
             var nombre = document.getElementById("nombre").value;
             var nombreSpan = document.getElementById("nombreSpan");
             nombreSpan.textContent = nombre;
+
+            angular.module('ngAppDemo', []).controller('ngAppDemoController', function($scope) {
+  $scope.a = mostrarSaludo();
+});
         }
+
+            
     
         </script>
         
